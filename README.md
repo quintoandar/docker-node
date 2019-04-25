@@ -1,5 +1,5 @@
 # docker-node
 
-This is a alpine node image with additions of git bash and libpng.
+[![node](https://img.shields.io/badge/node-v10.15.3-blue.svg)](https://nodejs.org/en/)
 
-Currently on node 10.15.3
+This is a alpine node docker-image with additions of git, bash and libpng.
