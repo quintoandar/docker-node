@@ -9,4 +9,5 @@ RUN apk --no-cache update \
     zlib-dev \
     libpng-dev \
     git \
+    python \
     &&  rm -fr /var/cache/apk/*
