@@ -4,12 +4,22 @@ RUN apk --no-cache update \
     autoconf \
     automake \
     bash \
+    build-base \
     g++ \
-    libc6-compat \
-    libjpeg-turbo-dev \
-    libpng-dev \
-    make \
-    nasm \
     git \
+    libc6-compat \
+    libffi-dev \
+    libjpeg-turbo-dev \
+    libnotify-dev \
+    libpng-dev \
+    libtool \
+    make \
+    mariadb-dev \
+    nasm \
+    py-mysqldb \
     python \
-    &&  rm -fr /var/cache/apk/*
+    python3-dev \
+    xvfb \
+    && pip3 install --no-cache-dir --upgrade pip==18 setuptools \
+    && rm -fr /var/cache/apk/* 
+    # Don't upgrade, see this bug with pip19 https://github.com/takluyver/flit/issues/245
